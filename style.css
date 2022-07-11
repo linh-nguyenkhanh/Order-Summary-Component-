@@ -1,0 +1,130 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ min-height: 100vh;
+  width: 100%;
+  background-color:hsl(225, 100%, 94%);
+}
+.wave__image{
+  position: fixed;
+  top: -40%;
+  left: 0;
+  width: 100%;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  z-index: -1;
+}
+.container{
+
+margin: 0;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #fff;
+align-items: center;
+border-radius: 15px;
+min-width: 400px;
+
+font-family: 'Red Hat Display', sans-serif;
+font-size: 16px;
+
+}
+.hero-picture img{
+  width: 100%;
+  height:100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+.order-info{
+  text-align: center;
+}
+h1{
+font-weight: 900;
+padding: 15px ;
+
+
+}
+.text{
+  font-weight:500;
+  line-height: 1.5;
+  color: hsl(224, 23%, 55%);
+  padding: 10px;
+  width: 300px;
+  
+ 
+}
+.description-plan{
+  display: flex;
+align-items: center;
+  justify-content: space-between;
+ width: 300px;
+ background-color:hsl(225, 100%, 98%) ;
+ border-radius: 15px;
+margin:10px;
+ padding: 10px 20px ;
+}
+.annual-plan{
+  font-weight: 700;
+  color: black;
+  
+  
+}
+
+.price {
+  font-size:14px;
+  color: hsl(224, 23%, 55%);
+  vertical-align: top;
+}
+
+
+
+.change-btn:hover{
+  cursor: pointer;
+  color: hsl(245, 50%, 57%);
+}
+.pay-btn{
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color:white;
+  padding: 10px 60px;
+  margin: 20px;
+  width: 300px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight:500 ;
+  border-radius: 10px;
+  
+  box-shadow: 0 0 1rem 0 rgb(175, 175, 175);
+  border: none;
+}
+.pay-btn:hover{
+  cursor: pointer;
+  background-color:   hsl(245, 50%, 57%);
+}
+
+.cancel-btn{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight:700 ;
+  display: flex;
+  justify-content:  center;
+  margin-bottom: 20px;
+}
+.cancel-btn:hover{
+  cursor: pointer;
+  color: black;
+}
+@media only screen and (max-width:368px){
+.hero-picture img{
+  background-image: url(images/pattern-background-mobile.svg);
+}
+}
